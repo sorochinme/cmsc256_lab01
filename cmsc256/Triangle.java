@@ -28,12 +28,12 @@ public class Triangle  {
 
       if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
          throw new IllegalArgumentException("Sides: " + sideA + " " + sideB + " " + sideC
-            + " -- <replace this string>");       // add an explanation why this exception is being thrown.
+            + " One of the sides is equal or less than 0");       // add an explanation why this exception is being thrown.
       }
       if ((sideA >= sideB + sideC) || (sideB >= sideA + sideC) || (sideC >= sideA + sideB)) {
          throw new IllegalArgumentException("Sides: "
             + sideA + " " + sideB + " " + sideC
-            + " -- <replace this string>");      // add an explanation why this exception is being thrown.
+            + " One of the sides is too large");      // add an explanation why this exception is being thrown.
       }
    }
 
